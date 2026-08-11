@@ -1,7 +1,10 @@
+"use client";
+
 import { Instagram, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Logo } from "./Logo";
 import { Reveal } from "./Reveal";
 import { site, whatsappLink } from "@/lib/site";
+import { GmailButton } from "./GmailButton";
 
 const footerServices = [
   "Projetos de Arquitetura",
@@ -24,6 +27,14 @@ const navLinks = [
 ] as const;
 
 export function Footer() {
+  const handleOpenGmail = () => {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${site.email}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <footer className="border-t border-border bg-background px-6 pt-16 pb-8">
       <div className="mx-auto mb-12 grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-3">
@@ -78,12 +89,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={13} className="shrink-0 text-primary" />
-                <a
-                  href={`mailto:${site.email}`}
-                  className="text-sm text-muted-foreground transition-colors duration-150 hover:text-primary"
+                <GmailButton
+                  type="button"
+                  onClick={handleOpenGmail}
+                  className="cursor-pointer text-left text-sm text-muted-foreground transition-colors duration-150 hover:text-primary"
                 >
                   {site.email}
-                </a>
+                </GmailButton>
               </li>
               <li className="flex items-center gap-3">
                 <Instagram size={13} className="shrink-0 text-primary" />

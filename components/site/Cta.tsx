@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowUpRight, Instagram, Mail, MessageCircle } from "lucide-react";
 import { site, whatsappLink } from "@/lib/site";
 import { Reveal } from "./Reveal";
@@ -20,11 +22,14 @@ export function Cta() {
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <a
-            href={`mailto:${site.email}`}
-            className="flex items-center justify-center gap-3 bg-primary-foreground px-8 py-4 font-display text-sm font-black uppercase tracking-wider text-primary transition-colors hover:bg-primary-foreground/90"
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${site.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 border-2 border-primary-foreground px-8 py-4 font-display text-sm font-black uppercase tracking-wider text-primary-foreground transition-colors hover:bg-primary-foreground/10"
           >
             <Mail size={15} />
-            {site.email}
+            E-MAIL
+            <ArrowUpRight size={15} />
           </a>
           <a
             href={whatsappLink}
