@@ -132,6 +132,8 @@
   html {
     font-size: var(--font-size);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   section[id],
@@ -142,6 +144,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-barlow), sans-serif;
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   h1 {
