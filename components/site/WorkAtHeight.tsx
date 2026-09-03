@@ -10,7 +10,7 @@ const heightServices = [
   "Instalação de olhais e dispositivos de ancoragem",
   "Linhas de vida e proteção contra quedas",
   "Coordenação de trabalhos em altura",
-  "Acesso por técnicas de corda",
+  "Acesso por corda e técnicas verticais (normas IRATA / NR-35)",
   "Planejamento e acompanhamento técnico",
   "Supervisão de segurança em altura",
   "Elaboração de plano de emergência e resgate",
@@ -65,7 +65,8 @@ export function WorkAtHeight() {
                   <CheckCircle size={18} className="shrink-0 text-primary" />
                   <p className="text-sm leading-snug text-muted-foreground">
                     Todos os serviços em altura seguem rigorosamente a{" "}
-                    <strong className="text-foreground">NR-35</strong> e demais normas
+                    <strong className="text-foreground">NR-35</strong>, as normas{" "}
+                    <strong className="text-foreground">IRATA</strong> para acesso com cordas e demais normas
                     regulamentadoras aplicáveis.
                   </p>
                 </div>

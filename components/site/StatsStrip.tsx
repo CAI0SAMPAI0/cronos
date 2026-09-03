@@ -4,7 +4,7 @@ const stats = [
   { value: "15+", label: "Anos de Experiência" },
   { value: "400+", label: "Projetos Realizados" },
   { value: "100%", label: "Conformidade Técnica" },
-  { value: "NR-35", label: "Certificação em Altura" },
+  { value: "CAU/RJ", label: "Empresa Cadastrada no Conselho" },
 ];
 
 export function StatsStrip() {

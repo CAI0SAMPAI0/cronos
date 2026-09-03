@@ -1,8 +1,8 @@
 export const faqs = [
   {
-    question: "Vocês atendem somente em São Paulo?",
+    question: "Em quais localidades vocês atendem?",
     answer:
-      "Depende do tipo de serviço e da localidade. Para serviços de supervisão, acompanhamento e gerenciamento, atendemos preferencialmente no Rio de Janeiro e região. Para demandas de consultoria e orientação técnica, detalhamos cada caso para avaliar a viabilidade.",
+      "Atendemos prioritariamente em todo o Estado do Rio de Janeiro e região metropolitana para supervisão, vistorias e acompanhamento técnico presencial. Para demandas de consultoria técnica, laudos e projetos, avaliamos demandas em outras localidades.",
   },
   {
     question: "Quais são os valores praticados?",
@@ -20,9 +20,9 @@ export const faqs = [
       "Sim. Elaboramos e acompanhamos programas relacionados às Normas Regulamentadoras, como PGR e PCMSO, e orientamos sobre as exigências de segurança contra incêndio e demais adequações normativas.",
   },
   {
-    question: "Trabalham com trabalhos em altura?",
+    question: "Trabalham com serviços em altura?",
     answer:
-      "Sim, desde serviços de verificação até a execução, planejamos e supervisionamos atividades em altura com os cuidados de segurança previstos na NR-35.",
+      "Sim. Desde serviços de inspeção e laudos técnicos até a execução e supervisão, atuamos com rigor total às normas da NR-35 e aos padrões internacionais da IRATA para acesso com cordas.",
   },
   {
     question: "Realizam somente a supervisão ou também executam a obra?",
