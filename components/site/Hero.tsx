@@ -6,15 +6,15 @@ import { Reveal } from "./Reveal";
 export function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-screen items-center overflow-hidden">
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden transform-gpu">
         <Image
-          src={images.senado}
+          src={images.hero}
           alt="Centro Empresarial Senado (EDISEN / Petrobras)"
           fill
           priority
-          quality={75}
+          quality={60}
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center [transform:translateZ(0)]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30 opacity-85" />
@@ -62,7 +62,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal direction="up" delay={250}>
-            <div className="mb-10 max-w-xl border-l-2 border-primary/50 bg-secondary/50 p-3.5 backdrop-blur-sm">
+            <div className="mb-10 max-w-xl border-l-2 border-primary/50 bg-secondary/85 p-3.5">
               <div className="text-[10px] font-black uppercase tracking-[0.2em] text-primary">
                 Grandes Obras no Histórico Profissional
               </div>
