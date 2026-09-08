@@ -6,30 +6,19 @@ import { Reveal } from "./Reveal";
 export function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-screen items-center overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden transform-gpu">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <Image
           src={images.hero}
           alt="Centro Empresarial Senado (EDISEN / Petrobras)"
           fill
           priority
-          quality={60}
           sizes="100vw"
-          className="object-cover object-center [transform:translateZ(0)]"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30 opacity-85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
       </div>
 
       <div className="pointer-events-none absolute top-0 bottom-0 left-0 z-10 w-1 bg-primary" />
-
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-8 pt-28 pb-20 lg:grid-cols-5 lg:px-14">
         <div className="lg:col-span-3">
