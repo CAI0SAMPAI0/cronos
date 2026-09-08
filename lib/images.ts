@@ -1,7 +1,7 @@
 export const images = {
-  hero: "/images/senado.jpg",
+  hero: "/images/senado.webp",
   building: "/images/nissan.jpg",
-  senado: "/images/senado.jpg",
+  senado: "/images/senado.webp",
   senadoAtrio: "/images/senado_atrio.jpg",
   nissan: "/images/nissan.jpg",
   michelin: "/images/michelin.jpg",
