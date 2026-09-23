@@ -48,7 +48,7 @@ const testimonials: TestimonialItem[] = [
     author: "Lucia",
     role: "Ignifire — Segurança contra Incêndio & Ignifugação",
     badge: "Segurança Contra Incêndio & Ignifugação",
-    colSpanLg: "lg:col-span-3",
+    colSpanLg: "lg:col-span-2",
   },
   {
     paragraphs: [
@@ -59,7 +59,19 @@ const testimonials: TestimonialItem[] = [
     author: "Eduardo Mazzoni",
     role: "Mazzoni Soluções em Altura",
     badge: "Soluções em Altura & SST",
-    colSpanLg: "lg:col-span-3",
+    colSpanLg: "lg:col-span-2",
+  },
+  {
+    paragraphs: [
+      "Minha experiência com a Cronos Engenharia e Arquitetura tem sido muito positiva.Desde o levantamento das necessidades da obra, o atendimento tem sido muito completo, com explicações detalhadas sobre cada etapa, os procedimentos necessários e os prazos, o que traz bastante segurança para a tomada de decisões.",
+      "O acompanhamento das cotações e a organização das opções de serviços e orçamentos também fizeram muita diferença.As informações são apresentadas de forma clara e objetiva, facilitando a compreensão dos custos e de cada etapa da obra.",
+      "Destaco ainda a forma solícita e atenciosa como o Marco conduz todo o processo.Ele está sempre disponível para esclarecer as dúvidas e trazer novos pontos para avaliarmos, ajudando a reavaliar a condução da obra sempre que necessário.",
+      "É um acompanhamento que transmite confiança e torna todo o processo mais organizado e seguro.",
+    ],
+    author: "Simone Montenegro",
+    role: "Reforma de apartamento",
+    badge: "Reforma de apartamento",
+    colSpanLg: "lg:col-span-2",
   },
 ];
 
