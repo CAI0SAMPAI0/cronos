@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NotFound() {
     return (
-        <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-gray-50 px-4 text-center">
+        <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-white px-4 text-center">
             {/* Imagem Not Found */}
             <Image
                 src="/not-found.jpg"
