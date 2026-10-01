@@ -22,23 +22,29 @@ const barlowCondensed = Barlow_Condensed({
 
 const title = "Cronos Engenharia e Arquitetura";
 const description =
-  "Arquitetura, planejamento e consultoria técnica para obras, reformas, condomínios e empresas. Trabalho em altura, recuperação de fachadas, SST e regularização predial com segurança e conformidade.";
+  "Cronos Engenharia e Arquitetura: planejamento, consultoria técnica e execução de obras, reformas, condomínios e indústrias no Rio de Janeiro. Especialistas em trabalho em altura, recuperação de fachadas, segurança do trabalho (SST) e regularização predial.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: `${title} | Obras, Reformas e Segurança do Trabalho`,
+    default: `${title} | Obras, Reformas e SST - Rio de Janeiro`,
     template: `%s | ${title}`,
   },
   description,
   keywords: [
-    "engenharia",
-    "arquitetura",
-    "reformas",
+    "Cronos Engenharia",
+    "Cronos Engenharia e Arquitetura",
+    "Cronos Engenharia RJ",
+    "Cronos Engenharia Rio de Janeiro",
+    "Cronos Arquitetura",
+    "engenharia civil rj",
+    "arquitetura rj",
+    "reformas prediais e comerciais",
     "projetos de arquitetura",
     "trabalho em altura",
     "recuperação de fachadas",
     "segurança do trabalho",
+    "SST Rio de Janeiro",
     "laudo de autovistoria predial",
     "segurança contra incêndio",
     "AVCB",
@@ -54,20 +60,20 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: title,
-    title,
+    title: `${title} | Engenharia, Reformas e SST no RJ`,
     description,
     images: [
       {
         url: images.hero,
         width: 1400,
         height: 900,
-        alt: "Edificação moderna",
+        alt: "Cronos Engenharia e Arquitetura - Projetos e Obras",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title,
+    title: `${title} | Engenharia, Reformas e SST no RJ`,
     description,
     images: [images.hero],
   },
@@ -90,13 +96,38 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["ProfessionalService", "GeneralContractor"],
+  "@id": `${site.domain}/#organization`,
   name: title,
+  alternateName: [
+    "Cronos Engenharia",
+    "Cronos Engenharia RJ",
+    "Cronos Engenharia & Arquitetura",
+    "Cronos Online",
+    "Cronos",
+  ],
   url: site.domain,
+  logo: `${site.domain}/cronos_logo.jpg`,
+  image: `${site.domain}/images/hero.jpg`,
   email: site.email,
   telephone: site.whatsappDisplay,
   description,
-  areaServed: "Rio de Janeiro e região",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Rio de Janeiro",
+    addressRegion: "RJ",
+    addressCountry: "BR",
+  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Rio de Janeiro",
+    },
+    {
+      "@type": "State",
+      name: "Rio de Janeiro",
+    },
+  ],
   priceRange: "$$",
 };
 

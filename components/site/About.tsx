@@ -17,7 +17,7 @@ const values = [
 
 export function About() {
   return (
-    <section className="border-y border-border bg-secondary py-28">
+    <section id="sobre" className="border-y border-border bg-secondary py-28">
       <div className="mx-auto max-w-7xl px-8">
         <div className="grid grid-cols-1 items-start gap-20 lg:grid-cols-2">
           <Reveal direction="left">

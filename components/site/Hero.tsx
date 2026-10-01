@@ -45,7 +45,7 @@ export function Hero() {
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
               Consultoria e assessoria técnica especializada para obras, reformas,
               condomínios e indústrias. Da análise técnica inicial ao acompanhamento
-              rigoroso da execução, a Cronos entrega conformidade técnica, segurança
+              rigoroso da execução, a Cronos Engenharia entrega conformidade técnica, segurança
               e controle pleno.
             </p>
           </Reveal>

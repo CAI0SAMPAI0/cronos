@@ -1,46 +1,63 @@
-'use client';
+"use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowLeft, Home } from "lucide-react";
 
 export default function NotFound() {
-    return (
-        <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-white px-4 text-center">
-            {/* Imagem Not Found */}
-            <Image
-                src="/not-found.jpg"
-                alt="404"
-                width={300}
-                height={300}
-                className="mt-10"
-            />
+  return (
+    <div className="relative flex min-h-screen w-screen flex-col items-center justify-center bg-background px-6 py-12 text-center text-foreground">
+      {/* Detalhe de linha de marca no topo */}
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
 
-            {/* Conteudo da Página */}
-            <h1 className="text-8xl font-black text-gray-900 mb-4">404</h1>
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">Página não existente</h2>
-            <p className="text-gray-500 mb-8 max-w-md">
-                A página que você está procurando não existe ou foi movida.
-            </p>
-            <button
-                onClick={() => window.history.back()}
-                className="
-                    cursor-pointer
-                    rounded-2xl
-                    border-2 border-primary
-                    bg-primary
-                    px-6 py-3
-                    font-medium text-white
-                    shadow-sm
-                    transition-transform duration-200
-                    hover:scale-105
-                    hover:border-chart-5
-                    hover:bg-chart-5
-                    active:scale-110
-                    active:border-chart-5
-                    active:bg-chart-5
-                "
-            >
-                Voltar
-            </button>
-        </div>
-    );
+      {/* Imagem Not Found com acabamento elegante */}
+      <div className="relative mb-6 overflow-hidden rounded-2xl border border-border shadow-2xl">
+        <Image
+          src="/not-found.jpg"
+          alt="404 - Página não encontrada"
+          width={280}
+          height={280}
+          priority
+          className="object-cover transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+
+      {/* Conteúdo */}
+      <div className="mb-3 flex items-center justify-center gap-3">
+        <div className="h-px w-8 bg-primary" />
+        <span className="font-display text-xs font-black uppercase tracking-[0.25em] text-primary">
+          Erro 404
+        </span>
+        <div className="h-px w-8 bg-primary" />
+      </div>
+
+      <h1 className="mb-3 font-display text-4xl font-black uppercase tracking-tight text-foreground sm:text-5xl">
+        Página não encontrada
+      </h1>
+
+      <p className="mb-8 max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base">
+        A página que você está procurando não existe, foi alterada ou movida para outro endereço.
+      </p>
+
+      {/* Botões de Ação */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <Link
+          href="/"
+          className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-display text-xs font-black uppercase tracking-[0.15em] text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-200 hover:bg-primary/85 hover:scale-105 active:scale-95"
+        >
+          <Home size={15} />
+          Ir para a Página Inicial
+        </Link>
+
+        <button
+          type="button"
+          onClick={() => window.history.back()}
+          className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border border-border bg-secondary/80 px-6 py-3 font-display text-xs font-bold uppercase tracking-[0.15em] text-muted-foreground transition-all duration-200 hover:border-primary/40 hover:text-foreground hover:scale-105 active:scale-95"
+        >
+          <ArrowLeft size={15} />
+          Página Anterior
+        </button>
+      </div>
+    </div>
+  );
 }

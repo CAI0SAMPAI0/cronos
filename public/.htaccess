@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirecionamento 301 Permanente de /quem-somos para /#sobre
+  RewriteRule ^quem-somos/?$ /#sobre [R=301,L,NE]
+</IfModule>
+
+# Configuração da página 404 personalizada para Apache/Hostinger
+ErrorDocument 404 /404.html
